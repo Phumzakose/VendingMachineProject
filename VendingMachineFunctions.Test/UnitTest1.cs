@@ -75,7 +75,7 @@ public class UnitTest1
   public void ItShouldBeAbleToReturnThePriceOfProduct()
   {
     AddItems();
-    Assert.Equal("The price of Doritos is 17,8", test1.GetPriceOfProduct("Doritos"));
+    Assert.Equal("The price of Doritos is 17.8", test1.GetPriceOfProduct("Doritos"));
 
   }
   [Fact]
