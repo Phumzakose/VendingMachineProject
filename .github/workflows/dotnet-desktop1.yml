@@ -21,7 +21,7 @@ jobs:
     - name: Test
       run: dotnet test ./VendingMachineFunctions.Test/
     - name: Restore dependencies
-      run: dotnet restore ./src/Ferry
+      run: dotnet restore ./src/VendingMachineFunctions
     - name: Build
       run: dotnet build --no-restore /p:ContinuousIntegrationBuild=true ./src/VendingMachineFunctions
     - name: Test
