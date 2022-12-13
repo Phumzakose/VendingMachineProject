@@ -6,12 +6,8 @@ public class Battery : PowerSource
   {
 
   }
-
   public override string GetDescription()
   {
     return "Using Battery";
   }
-
-
-
 }

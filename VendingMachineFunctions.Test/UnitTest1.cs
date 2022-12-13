@@ -37,7 +37,6 @@ public class UnitTest1
     user.RegisterVendingMachine(test3);
   }
 
-
   [Fact]
   public void ItShouldBeAbleToreturnProductBought()
   {
@@ -75,7 +74,7 @@ public class UnitTest1
   public void ItShouldBeAbleToReturnThePriceOfProduct()
   {
     AddItems();
-    Assert.Equal("The price of Doritos is 17.8", test1.GetPriceOfProduct("Doritos"));
+    Assert.Equal("The price of Doritos is R17.8", test1.GetPriceOfProduct("Doritos"));
 
   }
   [Fact]
@@ -203,8 +202,4 @@ public class UnitTest1
     Assert.Equal(135.76, user.TotalAmount());
 
   }
-
-
-
-
 }

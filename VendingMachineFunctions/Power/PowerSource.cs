@@ -10,12 +10,10 @@ public abstract class PowerSource : IPowerSource
 
   }
 
-
   public PowerSource(bool isOn)
   {
     this.isOn = isOn;
   }
-
 
   public void SwitchOn()
   {

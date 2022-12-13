@@ -3,13 +3,9 @@ namespace VendingMachineFunctions;
 
 public class Manager
 {
-
-
   public List<VendingMachine> registerVendingMachine = new List<VendingMachine>();
 
   public Dictionary<string, int> soldProducts = new Dictionary<string, int>();
-
-
 
   public void RegisterVendingMachine(VendingMachine vendingMachine)
   {
@@ -82,14 +78,5 @@ public class Manager
     }
     return amount;
   }
-
-
-
-
-
-
-
-
-
 
 }

@@ -12,5 +12,4 @@ public class Product
     ProductSize = productSize;
 
   }
-
 }

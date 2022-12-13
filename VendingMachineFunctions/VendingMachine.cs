@@ -2,7 +2,6 @@ namespace VendingMachineFunctions;
 
 public class VendingMachine
 {
-
   public IPowerSource PowerSource { get; private set; }
 
   public VendingMachine(IPowerSource power)
@@ -13,13 +12,12 @@ public class VendingMachine
 
   }
 
-
-  List<Product> products = new List<Product>();
+  private List<Product> products = new List<Product>();
   public Dictionary<string, int> boughtItems = new Dictionary<string, int>();
 
-  double totalAmount = 0;
-  double change = 0;
-  int counter = 1;
+  private double totalAmount = 0;
+  private double change = 0;
+  private int counter = 1;
 
   public void AddProducts(Product item)
   {
@@ -74,7 +72,6 @@ public class VendingMachine
   {
     return boughtItems;
   }
-
   public string GetPriceOfProduct(string product)
   {
     if (PowerSource.PowerIsOn())
@@ -84,7 +81,7 @@ public class VendingMachine
       var item = products.Find(x => x.ProductName == product);
       if (item != null)
       {
-        message = "The price of " + item.ProductName + " is " + item.ProductPrice;
+        message = "The price of " + item.ProductName + " is R" + item.ProductPrice;
       }
       return message;
 
@@ -100,14 +97,4 @@ public class VendingMachine
   {
     return totalAmount;
   }
-
-
-
-
-
-
-
-
-
-
 }
